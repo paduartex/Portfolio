@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Get in touch with Paulo Duarte, 6x Certified Salesforce Consultant.">
+<title>Contact | Paulo Duarte – Salesforce Consultant</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Cdefs%3E%3ClinearGradient id=%22g%22 x2=%221%22 y2=%221%22%3E%3Cstop stop-color=%22%2300b4ff%22/%3E%3Cstop offset=%22.55%22 stop-color=%22%237b5cff%22/%3E%3Cstop offset=%221%22 stop-color=%22%23ff4fd8%22/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width=%22100%22 height=%22100%22 rx=%2222%22 fill=%22url(%23g)%22/%3E%3Ctext x=%2250%22 y=%2266%22 font-family=%22Arial%22 font-weight=%22bold%22 font-size=%2246%22 fill=%22white%22 text-anchor=%22middle%22%3EPD%3C/text%3E%3C/svg%3E">
+<meta property="og:title" content="Paulo Duarte | Salesforce Consultant">
+<meta property="og:description" content="6x Certified Salesforce Consultant – Sales Cloud, Service Cloud, Experience Cloud and Agentforce.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0a0c14">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header><div class="container"><nav>
+  <a href="index.html" class="logo"><span class="brand-name" aria-label="Paulo Duarte"><span class="ch" style="--i:0">P</span><span class="ch" style="--i:1">a</span><span class="ch" style="--i:2">u</span><span class="ch" style="--i:3">l</span><span class="ch" style="--i:4">o</span><span class="ch" style="--i:5">&nbsp;</span><span class="ch" style="--i:6">D</span><span class="ch" style="--i:7">u</span><span class="ch" style="--i:8">a</span><span class="ch" style="--i:9">r</span><span class="ch" style="--i:10">t</span><span class="ch" style="--i:11">e</span></span></a>
+  <button class="menu-btn" onclick="document.querySelector('.links').classList.toggle('open')" aria-label="Menu">☰</button>
+  <ul class="links">
+    <li><a href="index.html#services">Services</a></li><li><a href="index.html#certs">Certifications</a></li>
+    <li><a href="index.html#videos">Videos</a></li><li><a href="contact.html" style="color:var(--text)">Contact</a></li>
+  </ul>
+</nav></div></header>
+
+<section class="hero"><div class="container contact-wrap">
+  <div class="info">
+    <h1 class="contact-title">Let's <span>talk</span></h1>
+    <p>Tell me a little about your project and I'll get back to you as soon as possible.</p>
+    <p class="where">Remote &amp; on-site</p>
+    <div class="socials">
+      <a class="social li" href="https://www.linkedin.com/in/pbduarte/" target="_blank" rel="noopener" aria-label="Connect on LinkedIn">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+        <span>Connect on LinkedIn</span></a>
+      <a class="social yt" href="https://www.youtube.com/@paduarte" target="_blank" rel="noopener" aria-label="Watch on YouTube">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg>
+        <span>Watch on YouTube</span></a>
+    </div>
+  </div>
+
+  
+  <form action="https://formsubmit.co/contact@paduarte.com" method="POST">
+    <input type="hidden" name="_subject" value="New enquiry from your portfolio site">
+    <input type="hidden" name="_template" value="table">
+    <input type="text" name="_honey" style="display:none">
+    <label>Full name<input type="text" name="name" required></label>
+    <label>Email<input type="email" name="email" required></label>
+    <label>Company<input type="text" name="company"></label>
+    <label>What do you need help with?
+      <select name="service">
+        <option>Sales Cloud</option><option>Service Cloud</option><option>Experience Cloud</option>
+        <option>Flow / Automation</option><option>Agentforce / AI</option><option>Salesforce Administration</option><option>User Adoption</option><option>End-User Training</option><option>Contract role</option><option>Other</option>
+      </select></label>
+    <label>Message<textarea name="message" required></textarea></label>
+    <button type="submit" class="btn btn-primary">Send message</button>
+  </form>
+</div></section>
+
+<footer><div class="container"><p>© 2026 Paulo Duarte. All rights reserved. · <a href="index.html">Home</a></p>
+  <p class="made-by">✨ Designed and built with AI</p>
+  <p class="legal">Salesforce, Agentforce, Trailhead and related logos and certification badges are trademarks of Salesforce, Inc., used for identification only. I am an independent consultant, not affiliated with or endorsed by Salesforce. LinkedIn and YouTube logos belong to their respective owners.</p></div></footer>
+<script>
+const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('show');io.unobserve(x.target)}}),{threshold:.12});
+window.addEventListener('load',()=>document.querySelectorAll('section .card,section .cert,section .video,.stat,.cert-strip div,section h2').forEach(el=>{el.classList.add('reveal');io.observe(el)}));
+</script>
+</body>
+</html>
