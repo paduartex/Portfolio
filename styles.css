@@ -204,3 +204,15 @@ input:focus,select:focus,textarea:focus{border-color:var(--accent2);box-shadow:0
 @media(prefers-reduced-motion:reduce){.tick circle,.tick path{stroke-dashoffset:0}}
 .thanks h1{white-space:nowrap;font-size:clamp(2.2rem,8vw,3.6rem);max-width:none!important}
 .form-error{color:#ff7a90;font-size:.9rem}#send-btn:disabled{opacity:.7;cursor:wait}
+/* Testimonials */
+.quotes{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.quote{position:relative;margin:0;padding:32px 30px 26px;border-radius:16px;background:var(--card);border:1px solid var(--line);display:flex;flex-direction:column;justify-content:space-between;gap:24px;transition:transform .25s,box-shadow .25s,border-color .25s}
+.quote:hover{transform:translateY(-5px);border-color:transparent;box-shadow:0 0 0 1px var(--accent2),0 12px 36px rgba(123,92,255,.3)}
+.qmark{position:absolute;top:6px;right:22px;font-size:5.5rem;line-height:1;font-family:Georgia,serif;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;opacity:.6}
+.quote blockquote{color:#d7dcec;font-size:1rem;line-height:1.7;font-style:italic;position:relative}
+.quote figcaption{display:flex;align-items:center;gap:14px}
+.avatar{flex:none;width:48px;height:48px;border-radius:50%;display:grid;place-items:center;font-weight:700;color:#fff;background:var(--grad)}
+.quote figcaption b{display:block}.quote figcaption small{display:block;color:var(--muted);font-size:.85rem}
+.quote figcaption em{display:block;font-style:normal;font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;color:#b9a8ff;margin-top:2px}
+@media(max-width:800px){.quotes{grid-template-columns:1fr}}
+.qmark{font-size:4.2rem;top:8px;right:22px}
