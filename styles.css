@@ -203,3 +203,4 @@ input:focus,select:focus,textarea:focus{border-color:var(--accent2);box-shadow:0
 @keyframes drawc{to{stroke-dashoffset:0}}
 @media(prefers-reduced-motion:reduce){.tick circle,.tick path{stroke-dashoffset:0}}
 .thanks h1{white-space:nowrap;font-size:clamp(2.2rem,8vw,3.6rem);max-width:none!important}
+.form-error{color:#ff7a90;font-size:.9rem}#send-btn:disabled{opacity:.7;cursor:wait}

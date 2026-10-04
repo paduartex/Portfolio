@@ -37,7 +37,8 @@
   </div>
 
   
-  <form action="https://formsubmit.co/contact@paduarte.com" method="POST">
+  <form id="contact-form" action="https://formsubmit.co/contact@paduarte.com" method="POST">
+    <input type="hidden" name="_captcha" value="false">
     <input type="hidden" name="_next" value="https://www.paduarte.com/thank-you.html">
     <input type="hidden" name="_subject" value="New enquiry from your portfolio site">
     <input type="hidden" name="_template" value="table">
@@ -51,7 +52,8 @@
         <option>Flow / Automation</option><option>Agentforce / AI</option><option>Salesforce Administration</option><option>User Adoption</option><option>End-User Training</option><option>Contract role</option><option>Other</option>
       </select></label>
     <label>Message<textarea name="message" required></textarea></label>
-    <button type="submit" class="btn btn-primary">Send message</button>
+    <button type="submit" class="btn btn-primary" id="send-btn">Send message</button>
+    <p class="form-error" id="form-error" hidden>Sorry, something went wrong. Please try again or connect with me on LinkedIn.</p>
   </form>
 </div></section>
 
@@ -61,6 +63,14 @@
 <script>
 const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('show');io.unobserve(x.target)}}),{threshold:.12});
 window.addEventListener('load',()=>document.querySelectorAll('section .card,section .cert,section .video,.stat,.cert-strip div,section h2').forEach(el=>{el.classList.add('reveal');io.observe(el)}));
+</script>
+<script>
+document.getElementById('contact-form').addEventListener('submit',async e=>{
+ e.preventDefault();const f=e.target,b=document.getElementById('send-btn'),err=document.getElementById('form-error');
+ err.hidden=true;b.disabled=true;b.textContent='Sending…';
+ try{const r=await fetch('https://formsubmit.co/ajax/contact@paduarte.com',{method:'POST',headers:{'Accept':'application/json'},body:new FormData(f)});
+  const d=await r.json();if(r.ok&&String(d.success)==='true'){location.href='thank-you.html';return}throw 0}
+ catch(_){err.hidden=false;b.disabled=false;b.textContent='Send message'}});
 </script>
 </body>
 </html>
